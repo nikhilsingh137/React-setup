@@ -2,22 +2,30 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { IAbout, IHeader, IPricing, IService } from "./Article";
 
 export const fetchHeader = createAsyncThunk("fetchHeader", async () => {
-  const headerItem = await fetch("http://localhost:9000/header");
+  const headerItem = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/header.json"
+  );
   return headerItem.json();
 });
 
 export const fetchAbout = createAsyncThunk("fetchAbout", async () => {
-  const aboutItem = await fetch("http://localhost:9000/about");
+  const aboutItem = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/about.json"
+  );
   return aboutItem.json();
 });
 
 export const fetchService = createAsyncThunk("fetchService", async () => {
-  const serviceItem = await fetch("http://localhost:9000/service");
+  const serviceItem = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/service.json"
+  );
   return serviceItem.json();
 });
 
 export const fetchPricing = createAsyncThunk("fetchPricing", async () => {
-  const pricingItem = await fetch("http://localhost:9000/pricing");
+  const pricingItem = await fetch(
+    "https://nikhilsingh137.github.io/React_data/data/pricing.json"
+  );
   return pricingItem.json();
 });
 
