@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-setup/static/css/main.e5004dd3.css",
+    "main.js": "/React-setup/static/js/main.37a9c280.js",
+    "static/media/contact.jpg": "/React-setup/static/media/contact.bb19f5352a390125c4dc.jpg",
+    "static/media/nikhil-logo-removebg-preview.png": "/React-setup/static/media/nikhil-logo-removebg-preview.508ea91bf36431e4f2a8.png",
+    "static/media/nikhil2-removebg-preview.png": "/React-setup/static/media/nikhil2-removebg-preview.724f585efbd8bc0292fc.png",
+    "static/media/photo1.jpg": "/React-setup/static/media/photo1.a84e927886a8354f1f39.jpg",
+    "static/media/service.jpg": "/React-setup/static/media/service.85727b22e7086431c271.jpg",
+    "static/media/coding1.jpg": "/React-setup/static/media/coding1.982920778d85e2920703.jpg",
+    "static/media/coding3.jpeg": "/React-setup/static/media/coding3.7d1ea38890f89fa8c33f.jpeg",
+    "index.html": "/React-setup/index.html",
+    "main.e5004dd3.css.map": "/React-setup/static/css/main.e5004dd3.css.map",
+    "main.37a9c280.js.map": "/React-setup/static/js/main.37a9c280.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5004dd3.css",
+    "static/js/main.37a9c280.js"
+  ]
+}
