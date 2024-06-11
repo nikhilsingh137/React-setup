@@ -1,0 +1,44 @@
+.imagebox {
+  background-image: url(../img/nikhil2-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    content: "";
+    bottom: 0;
+  }
+  .text {
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 9999;
+    h2 {
+      font-size: 60px;
+      color: #fff;
+      font-weight: 500;
+      white-space: nowrap;
+      span {
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        overflow: hidden;
+        vertical-align: bottom;
+        color: #0000ff;
+      }
+    }
+  }
+}

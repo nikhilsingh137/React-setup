@@ -1,0 +1,32 @@
+.serviceheader {
+  display: block;
+  .serviceBackground {
+    background-image: url(../img/service.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    h2 {
+      font-size: 60px;
+      color: #fff;
+      position: relative;
+      z-index: 9999;
+      font-weight: 600;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      content: "";
+      z-index: 99;
+    }
+  }
+}

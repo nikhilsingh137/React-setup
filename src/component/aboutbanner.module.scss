@@ -1,0 +1,31 @@
+.banner {
+  display: block;
+  background: #000;
+  padding-bottom: 60px;
+
+  .bannerText {
+    display: flex;
+    width: 1250px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .file {
+      width: 30%;
+      background: #fff;
+      text-align: center;
+      margin-top: 60px;
+      padding: 40px;
+      border-radius: 10px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      h2 {
+        font-size: 20px;
+        color: #000;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.container {
+  background: yellow;
+  margin-top: 40px;
+  padding-bottom: 60px;
+
+  .accordian {
+    display: block;
+    width: 1250px;
+    margin: auto;
+    padding-top: 40px;
+    .front {
+      border-bottom: solid 2px #808;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0px;
+        h2 {
+          display: flex;
+          gap: 10px;
+          font-size: 25px;
+          color: #666;
+          font-weight: 500;
+          img {
+            max-width: 70px;
+            max-height: 70px;
+          }
+          &:nth-child(3) {
+            img {
+              max-width: 90px;
+              max-height: 90px;
+            }
+          }
+        }
+      }
+      .content {
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s ease-out;
+        padding-bottom: 20px;
+        margin-top: 10px;
+
+        &.open {
+          transition: max-height 0.5s ease-in;
+        }
+        p {
+          font-size: 18px;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
