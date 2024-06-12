@@ -14,11 +14,11 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
-    path: "/:userId",
+    path: "/React-setup/:userId",
     element: <FormFilterData />,
   },
   {
-    path: "/:userId/:userId",
+    path: "/React-setup/:userId/:userId",
     element: <HomePage />,
   },
   {
