@@ -7,6 +7,7 @@ import { store } from "./redux/store";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import AppRouter from "./App";
+import { HashRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,7 +17,9 @@ root.render(
     <Provider store={store}>
       <Header />
       {/* <SliceData /> */}
-      <AppRouter />
+      <Router basename="/React-setup">
+        <AppRouter />
+      </Router>
       <Footer />
     </Provider>
   </React.StrictMode>
