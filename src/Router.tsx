@@ -14,18 +14,6 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
-    path: "*html",
-    element: <FormFilterData />,
-  },
-  {
-    path: "/:userId/:userId",
-    element: <HomePage />,
-  },
-  {
-    path: "/React-setup/about",
-    element: <AboutPage />,
-  },
-  {
     path: "/service",
     element: <ServicePage />,
   },
@@ -37,6 +25,19 @@ const router = createHashRouter([
     path: "/pricing",
     element: <PricingPage />,
   },
+  {
+    path: "/about",
+    element: <AboutPage />,
+  },
+  {
+    path: "*html",
+    element: <FormFilterData />,
+  },
+  {
+    path: "/:userId/:userId",
+    element: <HomePage />,
+  },
+
   {
     path: "*",
     element: <ExtraDataFilter />,
