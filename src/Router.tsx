@@ -14,23 +14,23 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
-    path: "about",
+    path: "/about",
     element: <AboutPage />,
   },
   {
-    path: "service",
+    path: "/service",
     element: <ServicePage />,
   },
   {
-    path: "service/:ServiceId",
+    path: "/service/:ServiceId",
     element: <ServiceFilterData />,
   },
   {
-    path: "contact",
+    path: "/contact",
     element: <ContactPage />,
   },
   {
-    path: "pricing",
+    path: "/pricing",
     element: <PricingPage />,
   },
   {
