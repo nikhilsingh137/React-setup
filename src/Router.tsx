@@ -14,7 +14,7 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
-    path: "/React-setup/:userId",
+    path: "*html",
     element: <FormFilterData />,
   },
   {
