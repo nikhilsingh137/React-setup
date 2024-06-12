@@ -10,7 +10,7 @@ import PricingPage from "./page/PricingPage";
 
 const router = createHashRouter([
   {
-    path: "/React-setup",
+    path: "/",
     element: <HomePage />,
   },
   {
