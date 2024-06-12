@@ -10,31 +10,31 @@ import PricingPage from "./page/PricingPage";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "/React-setup/",
     element: <HomePage />,
   },
   {
-    path: "/:userId",
+    path: "/React-setup/:userId",
     element: <FormFilterData />,
   },
   {
-    path: "/:userId/:userId",
+    path: "/React-setup/:userId/:userId",
     element: <HomePage />,
   },
   {
-    path: "/about",
+    path: "/React-setup/about",
     element: <AboutPage />,
   },
   {
-    path: "/service",
+    path: "/React-setup/service",
     element: <ServicePage />,
   },
   {
-    path: "/contact",
+    path: "/React-setup/contact",
     element: <ContactPage />,
   },
   {
-    path: "/pricing",
+    path: "/React-setup/pricing",
     element: <PricingPage />,
   },
   {
@@ -42,7 +42,7 @@ const router = createHashRouter([
     element: <ExtraDataFilter />,
   },
   {
-    path: "service/:ServiceId",
+    path: "/React-setup/service/:ServiceId",
     element: <ServiceFilterData />,
   },
 ]);
