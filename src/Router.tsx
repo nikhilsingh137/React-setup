@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import FormFilterData from "./component/FormFilterData";
 import AboutPage from "./page/AboutPage";
@@ -8,63 +8,34 @@ import ServiceFilterData from "./component/ServiceFilterData";
 import ContactPage from "./page/ContactPage";
 import PricingPage from "./page/PricingPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
-    element: (
-      <>
-        <HomePage />
-      </>
-    ),
+    element: <HomePage />,
   },
   {
     path: "/:userId",
-    element: (
-      <>
-        <FormFilterData />
-      </>
-    ),
+    element: <FormFilterData />,
   },
   {
     path: "/:userId/:userId",
-    element: (
-      <>
-        <HomePage />
-      </>
-    ),
+    element: <HomePage />,
   },
-
   {
     path: "/about",
-    element: (
-      <>
-        <AboutPage />
-      </>
-    ),
+    element: <AboutPage />,
   },
   {
     path: "/service",
-    element: (
-      <>
-        <ServicePage />
-      </>
-    ),
+    element: <ServicePage />,
   },
   {
     path: "/contact",
-    element: (
-      <>
-        <ContactPage />
-      </>
-    ),
+    element: <ContactPage />,
   },
   {
     path: "/pricing",
-    element: (
-      <>
-        <PricingPage />
-      </>
-    ),
+    element: <PricingPage />,
   },
   {
     path: "*",
