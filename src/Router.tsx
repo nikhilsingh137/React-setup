@@ -14,15 +14,15 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
-    path: "*html",
+    path: "*",
     element: <FormFilterData />,
   },
   {
-    path: "/React-setup/:userId/:userId",
+    path: "/:userId/:userId",
     element: <HomePage />,
   },
   {
-    path: "/about",
+    path: "/React-setup/about",
     element: <AboutPage />,
   },
   {
