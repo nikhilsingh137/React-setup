@@ -14,7 +14,7 @@ const router = createHashRouter([
     element: <HomePage />,
   },
   {
-    path: "/*html",
+    path: "*html",
     element: <FormFilterData />,
   },
   {
