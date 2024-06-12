@@ -3,11 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
-import { HashRouter } from "react-router-dom";
 // import SliceData from "./redux/SliceData";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-import App from "./App";
+import AppRouter from "./App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -17,9 +16,7 @@ root.render(
     <Provider store={store}>
       <Header />
       {/* <SliceData /> */}
-      <HashRouter basename="/React-setup">
-        <App />
-      </HashRouter>
+      <AppRouter />
       <Footer />
     </Provider>
   </React.StrictMode>

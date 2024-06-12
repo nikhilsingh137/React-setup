@@ -1,13 +1,20 @@
-import React from "react";
-import { RouterProvider } from "react-router-dom";
-import router from "./Router";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./page/HomePage";
+import AboutPage from "./page/AboutPage";
+import ServicePage from "./page/ServicePage";
+import ContactPage from "./page/ContactPage";
+import PricingPage from "./page/PricingPage";
 
-const App = () => {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
-};
+const AppRouter = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/service" element={<ServicePage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
+    </Routes>
+  </Router>
+);
 
-export default App;
+export default AppRouter;
