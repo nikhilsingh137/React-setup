@@ -20,7 +20,6 @@ root.render(
       <Router>
         <App />
       </Router>
-      ,
       <Footer />
     </Provider>
   </React.StrictMode>
