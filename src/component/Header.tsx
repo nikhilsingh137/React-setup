@@ -22,7 +22,7 @@ const Header = () => {
               data.headerData.Header.map((item) => {
                 return (
                   <li>
-                    <a href={item.url}>{item.title}</a>
+                    <a href={`/React-setup${item.url}`}>{item.title}</a>
                     <div className={Style.drop}>
                       {item.subMenu &&
                         item.subMenu.map((item) => {
