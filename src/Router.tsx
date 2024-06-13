@@ -58,7 +58,7 @@ const Router = () => {
     <div>
       <BrowserRouter basename="/React-setup">
         <Routes>
-          <Route path="/React-setup" element={<HomePage />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/service" element={<ServicePage />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
