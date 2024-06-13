@@ -1,0 +1,3 @@
+# https://nikhilsingh137.github.io/React-setup/
+User-agent: *
+Disallow:
