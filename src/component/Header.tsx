@@ -3,7 +3,7 @@ import Style from "./header.module.scss";
 import HDImg from "../img/nikhil-logo-removebg-preview.png";
 import { useAppDispatch, useAppSelector } from "../redux/hook";
 import { fetchHeader } from "../redux/Slice";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const Header = () => {
   const dispatch = useAppDispatch();
@@ -11,6 +11,7 @@ const Header = () => {
   useEffect(() => {
     dispatch(fetchHeader());
   }, [dispatch]);
+
   return (
     <div className={Style.header}>
       <div className={Style.headerTop}>
@@ -23,7 +24,7 @@ const Header = () => {
               data.headerData.Header.map((item) => {
                 return (
                   <li>
-                    <NavLink to={item.url}>{item.title}</NavLink>
+                    <Link href={item.url}></Link>
                     <div className={Style.drop}>
                       {item.subMenu &&
                         item.subMenu.map((item) => {
