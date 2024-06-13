@@ -10,31 +10,31 @@ import PricingPage from "./page/PricingPage";
 
 const router = createHashRouter([
   {
-    path: "https://nikhilsingh137.github.io/React-setup/",
+    path: "/",
     element: <HomePage />,
   },
   {
-    path: "https://nikhilsingh137.github.io/React-setup/about",
+    path: "/about",
     element: <AboutPage />,
   },
   {
-    path: "https://nikhilsingh137.github.io/React-setup/service",
+    path: "/service",
     element: <ServicePage />,
   },
   {
-    path: "https://nikhilsingh137.github.io/React-setup/service/:ServiceId",
+    path: "/service/:ServiceId",
     element: <ServiceFilterData />,
   },
   {
-    path: "https://nikhilsingh137.github.io/React-setup/contact",
+    path: "/contact",
     element: <ContactPage />,
   },
   {
-    path: "https://nikhilsingh137.github.io/React-setup/pricing",
+    path: "/pricing",
     element: <PricingPage />,
   },
   {
-    path: "https://nikhilsingh137.github.io/React-setup/:userId",
+    path: "/:userId",
     element: <FormFilterData />,
   },
   {
