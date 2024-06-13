@@ -56,7 +56,7 @@ import PricingPage from "./page/PricingPage";
 const Router = () => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/React-setup">
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
