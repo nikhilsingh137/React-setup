@@ -3,6 +3,7 @@ import Style from "./header.module.scss";
 import HDImg from "../img/nikhil-logo-removebg-preview.png";
 import { useAppDispatch, useAppSelector } from "../redux/hook";
 import { fetchHeader } from "../redux/Slice";
+import Link from "next/link";
 
 const Header = () => {
   const dispatch = useAppDispatch();
@@ -22,8 +23,10 @@ const Header = () => {
             {data.headerData?.Header &&
               data.headerData.Header.map((item) => {
                 return (
-                  <li>
-                    <a href={item.url}>{item.title}</a>
+                  <li key={item.id}>
+                    <Link href={item.url}>
+                      <a>{item.title}</a>
+                    </Link>
                     <div className={Style.drop}>
                       {item.subMenu &&
                         item.subMenu.map((item) => {
