@@ -46,7 +46,7 @@
 // export default router;
 
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import AboutPage from "./page/AboutPage";
 import ServicePage from "./page/ServicePage";
@@ -56,7 +56,7 @@ import PricingPage from "./page/PricingPage";
 const Router = () => {
   return (
     <div>
-      <BrowserRouter basename="/React-setup">
+      <HashRouter basename="/React-setup">
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
@@ -64,7 +64,7 @@ const Router = () => {
           <Route path="/contact" element={<ContactPage />}></Route>
           <Route path="/pricing" element={<PricingPage />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
