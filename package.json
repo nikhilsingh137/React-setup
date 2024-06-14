@@ -2,7 +2,7 @@
   "homepage": "https://nikhilsingh137.github.io/React-setup",
   "name": "my-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "@testing-library/jest-dom": "^5.17.0",
